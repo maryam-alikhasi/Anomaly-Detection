@@ -31,7 +31,7 @@ This project implements an **anomaly detection system** using **Isolation Forest
 
 3. **LLM-based Explanation**  
    - For detected anomalies, send a request to Together API.  
-   - Receive a type and description of the anomaly.  
+   - Receive a label and description of the anomaly.  
    - Display alerts in a human-readable format.
 
 ---
