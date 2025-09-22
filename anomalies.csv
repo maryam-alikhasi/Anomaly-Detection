@@ -1,0 +1,13 @@
+src_port,dst_port,packet_size,duration_ms,protocol,port_diff,bytes_per_ms,label,reason,confidence
+9999,62245,369,454,TCP,52246,0.813,Potential Port Scanning/Unauthorized Access  ,"The network traffic shows a large port difference (52,246) between the source and destination ports, which is unusual and may indicate port scanning or unauthorized access attempts.",0.04598088599200456
+80,8416,799,67,UDP,8336,11.925,Protocol Mismatch  ,"The source port 80 typically uses TCP for HTTP traffic, but the protocol is UDP, which is unusual and may indicate an anomaly.",0.0051517689594196
+9999,64600,967,472,TCP,54601,2.049,Port Scanning,The large port difference (54601) and specific packet size (967 bytes) suggest potential scanning activity to identify open ports.,0.03698907556683739
+8080,21911,1416,227,UDP,13831,6.238,Port Scanning  ,"The traffic shows a high port difference, short duration, use of UDP, and low bytes per millisecond, indicative of scanning activity.",0.003826609413584814
+443,8534,6537,152,TCP,8091,43.007,Potential Data Exfiltration,"The traffic shows a large packet size (6537 bytes) and a high port difference (8091), which could indicate an attempt to transfer sensitive data to a non-standard port, possibly as part of a data exfiltration effort.",0.1645085484862474
+8080,1628,312,433,TCP,6452,0.721,Port Scan  ,The large port difference (6452) and low bytes per millisecond (0.721) suggest potential port scanning activity.,0.015709716325847722
+8080,28518,641,57,UDP,20438,11.246,UDP Flood,"The network traffic shows a high destination port (28518), large port difference (20438), and uses the UDP protocol, which is often associated with DDoS attacks like UDP floods.",0.07761683519549822
+443,6146,150,469,UDP,5703,0.32,Port Scan  ,"The use of UDP on port 443, small packet size, low data rate, and large port difference suggest a potential port scanning attempt.",0.015415514225815441
+6666,61396,762,95,TCP,54730,8.021,C2 Communication,The large port difference and low bytes per millisecond suggest potential command and control activity.,0.011503181519291639
+8080,25281,1384,146,UDP,17201,9.479,Port Scanning,"The high destination port (25281) and large port difference (17201) suggest potential malicious activity, possibly port scanning or unauthorized data transfer using UDP.",0.028965874071791964
+443,2762,3253,363,TCP,2319,8.961,Port Scan  ,"The traffic shows a non-standard destination port, short connection duration, and packet size that may indicate reconnaissance activity.",0.05327477318398288
+8080,65337,297,316,TCP,57257,0.94,Port Scan  ,The large port difference (57257) and low bytes per millisecond (0.94) suggest potential scanning activity.,0.04352229371725569

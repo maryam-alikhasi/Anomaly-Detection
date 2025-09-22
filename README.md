@@ -8,7 +8,7 @@ This project implements an **anomaly detection system** using **Isolation Forest
 
 - **Goal**: Detect anomalies in streaming sensor data and provide human-readable explanations using LLMs.  
 - **Core Components**:
-  - `train_model.ipynb`: Prepares synthetic data, trains an Isolation Forest model, and saves the trained model.
+  - `train_model.ipynb`: Prepares synthetic data, trains an Isolation Forest model, and saves the trained model as anomaly_model.joblib.
   - `client.py`: Loads the trained model, detects anomalies in data from the server, and queries an LLM for labeling and explanation.
   - `server.py`: Continuously streams normal and anomalous data points (no modification required).  
 - **ML Algorithm**: Isolation Forest (unsupervised anomaly detection).  
@@ -22,7 +22,7 @@ This project implements an **anomaly detection system** using **Isolation Forest
    - Generate synthetic sensor data.  
    - Preprocess features.  
    - Train an Isolation Forest model.  
-   - Save the trained model (e.g., with `joblib`).  
+   - Save the trained model.  
 
 2. **Anomaly Detection**  
    - Load the model in `client.py`.  
@@ -40,22 +40,18 @@ This project implements an **anomaly detection system** using **Isolation Forest
 
 - Real-time anomaly detection  
 - LLM-powered explanations for anomalies  
-- Optional extensions for bonus points:
-  - PCA-based visualization of normal vs anomalous points  
-  - Logging anomalies to `.csv`  
+- Other extensions:
+  - PCA-based visualization of normal vs anomalous points(visualization.png)
+  - Logging anomalies to `anomalies.csv` 
   - Adding confidence scores  
-  - Comparing LLM prompt templates  
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 - **Machine Learning**: scikit-learn (Isolation Forest)  
-- **Visualization**: matplotlib / seaborn (optional)  
+- **Visualization**: matplotlib / seaborn 
 - **Language Model API**: Together AI – LLaMA3 70B  
-- **Programming Language**: Python 3  
+- **Programming Language**: Python 
 
 ---
-
-## 🚨 Example Alert
-
