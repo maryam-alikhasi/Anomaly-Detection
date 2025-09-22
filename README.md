@@ -4,7 +4,7 @@ This project implements an **anomaly detection system** using **Isolation Forest
 
 ---
 
-## 📌 Project Summary
+## Project Summary
 
 - **Goal**: Detect anomalies in streaming sensor data and provide human-readable explanations using LLMs.  
 - **Core Components**:
@@ -16,7 +16,7 @@ This project implements an **anomaly detection system** using **Isolation Forest
 
 ---
 
-## 🧠 Workflow
+## Workflow
 
 1. **Data Preparation & Training**  
    - Generate synthetic sensor data.  
@@ -31,12 +31,12 @@ This project implements an **anomaly detection system** using **Isolation Forest
 
 3. **LLM-based Explanation**  
    - For detected anomalies, send a request to Together API.  
-   - Receive a label and description of the anomaly.  
+   - Receive a type and description of the anomaly.  
    - Display alerts in a human-readable format.
 
 ---
 
-## 📊 Features
+## Features
 
 - Real-time anomaly detection  
 - LLM-powered explanations for anomalies  
@@ -53,5 +53,3 @@ This project implements an **anomaly detection system** using **Isolation Forest
 - **Visualization**: matplotlib / seaborn 
 - **Language Model API**: Together AI – LLaMA3 70B  
 - **Programming Language**: Python 
-
----
