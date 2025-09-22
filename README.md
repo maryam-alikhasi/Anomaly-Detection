@@ -8,11 +8,11 @@ This project implements an **anomaly detection system** using **Isolation Forest
 
 - **Goal**: Detect anomalies in streaming sensor data and provide human-readable explanations using LLMs.  
 - **Core Components**:
-  - `train_model.ipynb`: Prepares synthetic data, trains an Isolation Forest model, and saves the trained model as anomaly_model.joblib.
-  - `client.py`: Loads the trained model, detects anomalies in data from the server, and queries an LLM for labeling and explanation.
-  - `server.py`: Continuously streams normal and anomalous data points (no modification required).  
+  - `train_model.ipynb`: Preprocesses normal sensor data, trains an Isolation Forest model, and saves it as anomaly_model.joblib.
+  - `client.py`: Loads the trained model, detects anomalies in data from the server, and queries an LLM for explanation.
+  - `server.py`: Continuously streams normal and anomalous data points.  
 - **ML Algorithm**: Isolation Forest (unsupervised anomaly detection).  
-- **LLM Integration**: Uses Together AI API (DeepSeek LLaMA3 70B) to label and explain anomalies.
+- **LLM Integration**: Uses Together AI API (DeepSeek LLaMA3 70B) to explain anomalies.
 
 ---
 
